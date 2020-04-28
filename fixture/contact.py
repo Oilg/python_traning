@@ -4,7 +4,7 @@ class ContactHelper:
 
     def open_contact_creation_page(self):
         wd = self.app.wd
-        wd.find_element_by_link_text('Добавить контакт').click()
+        wd.find_element_by_link_text('add new').click()
 
     def create(self, group):
         wd = self.app.wd
@@ -65,4 +65,4 @@ class ContactHelper:
 
     def return_to_home_page(self):
         wd = self.app.wd
-        wd.find_element_by_link_text('Главная').click()
+        wd.find_element_by_link_text('home').click()
