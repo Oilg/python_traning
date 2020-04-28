@@ -6,17 +6,16 @@ class ContactHelper:
         wd = self.app.wd
         wd.find_element_by_link_text('add new').click()
 
-    def create(self, group):
+    def create(self, contact):
         wd = self.app.wd
         self.return_to_home_page()
         self.open_contact_creation_page()
-        self.fill_contact_form(group)
+        self.fill_contact_form(contact)
         # submit group creation
         wd.find_element_by_name('submit').click()
         self.return_to_home()
 
     def fill_contact_form(self, contact):
-        wd = self.app.wd
         self.change_field_value('firstname', contact.firstname)
         self.change_field_value('lastname', contact.lastname)
         self.change_field_value('title', contact.title)
@@ -66,3 +65,7 @@ class ContactHelper:
     def return_to_home_page(self):
         wd = self.app.wd
         wd.find_element_by_link_text('home').click()
+
+    def count(self):
+        wd = self.app.wd
+        return len(wd.find_elements_by_name('selected[]'))
