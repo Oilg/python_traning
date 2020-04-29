@@ -1,19 +1,22 @@
+from model.contact import Contact
+
+
 class ContactHelper:
     def __init__(self, app):
         self.app = app
 
     def open_contact_creation_page(self):
         wd = self.app.wd
-        wd.find_element_by_link_text('add new').click()
+        wd.find_element_by_link_text('Добавить контакт').click()
 
     def create(self, contact):
         wd = self.app.wd
-        self.return_to_home_page()
+        # self.return_to_home_page()
         self.open_contact_creation_page()
         self.fill_contact_form(contact)
         # submit group creation
         wd.find_element_by_name('submit').click()
-        self.return_to_home()
+        # self.return_to_home()
 
     def fill_contact_form(self, contact):
         self.change_field_value('firstname', contact.firstname)
@@ -48,7 +51,7 @@ class ContactHelper:
         self.fill_contact_form(new_contact_data)
         # submit modification
         wd.find_element_by_name('update').click()
-        self.return_to_home()
+        # self.return_to_home()
 
     def delete_first_contact(self):
         wd = self.app.wd
@@ -64,9 +67,19 @@ class ContactHelper:
 
     def return_to_home_page(self):
         wd = self.app.wd
-        if not (wd.current_url.endswith('/addressbook') and len(wd.find_elements_by_name('add')) > 0):
-            wd.find_element_by_link_text('home').click()
+        if not (wd.current_url.endswith('/addressbook') and len(wd.find_elements_by_name('searchstring')) > 0):
+            wd.find_element_by_link_text('Главная').click()
 
     def count(self):
         wd = self.app.wd
         return len(wd.find_elements_by_name('selected[]'))
+
+    def get_contact_list(self):
+        wd = self.app.wd
+        self.return_to_home_page()
+        contacts = []
+        for element in wd.find_elements_by_name('entry'):
+            text = element.text
+            id = element.find_element_by_name('selected[]').get_attribute('id')
+            contacts.append(Contact(firstname=text, id=id))
+        return contacts
