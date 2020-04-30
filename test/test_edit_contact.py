@@ -19,7 +19,7 @@ def test_edit_contact_lastname(app):
     if app.contact.count() == 0:
         app.contact.create(Contact(firstname='Анзор', lastname='Шарипов'))
     old_contacts = app.contact.get_contact_list()
-    app.contact.modify_first_contact(Contact(lastname='Новая фамилия'))
+    app.contact.modify_first_contact(Contact(lastname='Новая'))
     new_contacts = app.contact.get_contact_list()
     assert len(old_contacts) == len(new_contacts)
 
@@ -28,7 +28,7 @@ def test_edit_contact_title(app):
     if app.contact.count() == 0:
         app.contact.create(Contact(firstname='Анзор', lastname='Шарипов'))
     old_contacts = app.contact.get_contact_list()
-    app.contact.modify_first_contact(Contact(title='Новая должность'))
+    app.contact.modify_first_contact(Contact(title='Новая'))
     new_contacts = app.contact.get_contact_list()
     assert len(old_contacts) == len(new_contacts)
 
@@ -37,7 +37,7 @@ def test_edit_contact_address(app):
     if app.contact.count() == 0:
         app.contact.create(Contact(firstname='Анзор', lastname='Шарипов'))
     old_contacts = app.contact.get_contact_list()
-    app.contact.modify_first_contact(Contact(address='Новый адрес'))
+    app.contact.modify_first_contact(Contact(address='Новый'))
     new_contacts = app.contact.get_contact_list()
     assert len(old_contacts) == len(new_contacts)
 
@@ -46,7 +46,7 @@ def test_edit_contact_email(app):
     if app.contact.count() == 0:
         app.contact.create(Contact(firstname='Анзор', lastname='Шарипов'))
     old_contacts = app.contact.get_contact_list()
-    app.contact.modify_first_contact(Contact(email='Новая почта'))
+    app.contact.modify_first_contact(Contact(email='Новая'))
     new_contacts = app.contact.get_contact_list()
     assert len(old_contacts) == len(new_contacts)
 
@@ -55,6 +55,6 @@ def test_edit_contact_mobile(app):
     if app.contact.count() == 0:
         app.contact.create(Contact(firstname='Анзор', lastname='Шарипов'))
     old_contacts = app.contact.get_contact_list()
-    app.contact.modify_first_contact(Contact(mobile='Новый телефон'))
+    app.contact.modify_first_contact(Contact(mobile='Новый'))
     new_contacts = app.contact.get_contact_list()
     assert len(old_contacts) == len(new_contacts)
