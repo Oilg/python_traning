@@ -33,20 +33,23 @@ class ContactHelper:
             wd.find_element_by_name(field_name).clear()
             wd.find_element_by_name(field_name).send_keys(text)
 
-    def select_first_contact(self):
+    def select_contact_by_index(self, index):
         wd = self.app.wd
-        wd.find_element_by_name('selected[]').click()
+        wd.find_elements_by_xpath("//img[@alt='Edit']")[index].click()
 
     def editbutton(self):
         wd = self.app.wd
         wd.find_element_by_xpath('//*[@id="maintable"]/tbody/tr[2]/td[8]').click()
 
-    def modify_first_contact(self, new_contact_data):
+    def modify_first_contact(self):
+        self.modify_contact_by_index(0)
+
+    def modify_contact_by_index(self, index, new_contact_data):
         wd = self.app.wd
         self.return_to_home_page()
-        self.select_first_contact()
+        self.select_contact_by_index(index)
         # open modification form
-        self.editbutton()
+        # self.editbutton()
         # fill contact form
         self.fill_contact_form(new_contact_data)
         # submit modification
@@ -54,9 +57,12 @@ class ContactHelper:
         self.contact_cache = None
 
     def delete_first_contact(self):
+        self.delete_contact_by_index(0)
+
+    def delete_contact_by_index(self, index):
         wd = self.app.wd
         self.return_to_home_page()
-        self.select_first_contact()
+        self.select_contact_by_index(index)
         # submit deletion
         wd.find_element_by_xpath('//*[@id="content"]/form[2]/div[2]').click()
         wd.switch_to.alert.accept()
