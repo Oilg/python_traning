@@ -16,7 +16,6 @@ class ContactHelper:
         self.fill_contact_form(contact)
         # submit group creation
         wd.find_element_by_name('submit').click()
-        # self.return_to_home()
 
     def fill_contact_form(self, contact):
         self.change_field_value('firstname', contact.firstname)
@@ -51,7 +50,6 @@ class ContactHelper:
         self.fill_contact_form(new_contact_data)
         # submit modification
         wd.find_element_by_name('update').click()
-        # self.return_to_home()
 
     def delete_first_contact(self):
         wd = self.app.wd
@@ -60,10 +58,6 @@ class ContactHelper:
         # submit deletion
         wd.find_element_by_xpath('//*[@id="content"]/form[2]/div[2]').click()
         wd.switch_to.alert.accept()
-
-    def return_to_home(self):
-        wd = self.app.wd
-        wd.find_element_by_link_text('home page').click()
 
     def return_to_home_page(self):
         wd = self.app.wd
