@@ -1,13 +1,27 @@
+# -*- coding: utf-8 -*-
 from model.contact import Contact
 import random
 import string
+import os.path
+import json
+import getopt
+import sys
 
 
-constant = [
-    Contact(firstname='firstname1', lastname='lastname1', title='title1', address='address1',
-            email='email1', mobilephone='12345', homephone='12345', workphone='12345', secondaryphone='12345'),
-    Contact(firstname='firstname1', lastname='lastname1', title='title1', address='address1',
-            email='email1', mobilephone='12345', homephone='12345', workphone='12345', secondaryphone='12345')]
+try:
+    opts, args = getopt.getopt(sys.argv[1:], 'n:f:', ['number of contacts', 'file'])
+except getopt.GetoptError as err:
+    getopt.usage()
+    sys.exit(2)
+
+n = 5
+f = "data/contacts.json"
+
+for o, a in opts:
+    if o == '-n':
+        n = int(a)
+    elif o == "-f":
+        f = a
 
 
 def random_string_letters(prefix, maxlen):
@@ -25,4 +39,9 @@ testdata = [Contact(firstname=random_string_letters('firstname', 10), lastname=r
             email=random_string_letters('email', 10), mobilephone=random_string_digits(10),
             homephone=random_string_digits(10), workphone=random_string_digits(10),
             secondaryphone=random_string_digits(10))
-            for i in range(3)]
+            for i in range(n)]
+
+file = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", f)
+
+with open(file, 'w') as out:
+    out.write(json.dumps(testdata, default=lambda x: x.__dict__, indent=2))
