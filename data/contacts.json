@@ -1,0 +1,72 @@
+[
+  {
+    "py/object": "model.contact.Contact",
+    "firstname": "firstnameIaWub",
+    "lastname": "lastnameZkGm",
+    "title": "titleCrHpX",
+    "address": "addressyxJbtBzbD",
+    "homephone": "1949541",
+    "workphone": "",
+    "secondaryphone": "77333",
+    "email": "emailmHHaUSrbG",
+    "mobilephone": "12093992",
+    "all_phones_from_home_page": null,
+    "id": null
+  },
+  {
+    "py/object": "model.contact.Contact",
+    "firstname": "firstnameDhU",
+    "lastname": "lastnameSmL",
+    "title": "titleh",
+    "address": "addresshQqHZux",
+    "homephone": "151",
+    "workphone": "30",
+    "secondaryphone": "144491720",
+    "email": "email",
+    "mobilephone": "011",
+    "all_phones_from_home_page": null,
+    "id": null
+  },
+  {
+    "py/object": "model.contact.Contact",
+    "firstname": "firstnameJxwPjM",
+    "lastname": "lastnameL",
+    "title": "titleKURCu",
+    "address": "addressUMPKZOG",
+    "homephone": "8",
+    "workphone": "",
+    "secondaryphone": "104255761",
+    "email": "emailLA",
+    "mobilephone": "13",
+    "all_phones_from_home_page": null,
+    "id": null
+  },
+  {
+    "py/object": "model.contact.Contact",
+    "firstname": "firstnameKOeqtHP",
+    "lastname": "lastnameV",
+    "title": "titlegHaDBTty",
+    "address": "addressTDK",
+    "homephone": "701217",
+    "workphone": "64812",
+    "secondaryphone": "942",
+    "email": "emailOb",
+    "mobilephone": "0312",
+    "all_phones_from_home_page": null,
+    "id": null
+  },
+  {
+    "py/object": "model.contact.Contact",
+    "firstname": "firstnameaRPbwnMQ",
+    "lastname": "lastnameW",
+    "title": "titleHSRvC",
+    "address": "addresslwbvygixf",
+    "homephone": "2141",
+    "workphone": "42",
+    "secondaryphone": "95575865",
+    "email": "emailuwpoe",
+    "mobilephone": "9966",
+    "all_phones_from_home_page": null,
+    "id": null
+  }
+]
