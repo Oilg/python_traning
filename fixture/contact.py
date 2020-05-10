@@ -1,5 +1,6 @@
 from model.contact import Contact
 import re
+import time
 
 
 class ContactHelper:
@@ -83,6 +84,9 @@ class ContactHelper:
     def select_contact_by_id(self, id):
         wd = self.app.wd
         wd.find_element_by_css_selector("input[value='%s']" % id).click()
+
+    def waiting(self, seconds):
+        time.sleep(seconds)
 
     def return_to_home_page(self):
         wd = self.app.wd
