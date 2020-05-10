@@ -71,6 +71,19 @@ class ContactHelper:
         wd.switch_to.alert.accept()
         self.contact_cache = None
 
+    def delete_contact_by_id(self, id):
+        wd = self.app.wd
+        self.return_to_home_page()
+        self.select_contact_by_id(id)
+        # submit deletion
+        wd.find_element_by_xpath('//*[@id="content"]/form[2]/div[2]').click()
+        wd.switch_to.alert.accept()
+        self.contact_cache = None
+
+    def select_contact_by_id(self, id):
+        wd = self.app.wd
+        wd.find_element_by_css_selector("input[value='%s']" % id).click()
+
     def return_to_home_page(self):
         wd = self.app.wd
         if not int(len(wd.find_elements_by_name('searchstring')) > 0):
