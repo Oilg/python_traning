@@ -1,0 +1,38 @@
+0000000000000000000000000000000000000000 7710618d20cdba86b47c05ad54b8ab9a5aad6b5e Oilg <50927525+Oilg@users.noreply.github.com> 1587148593 +0300	clone: from https://github.com/Oilg/python_traning.git
+7710618d20cdba86b47c05ad54b8ab9a5aad6b5e 0f0cdc26c8ce4aeb017f35adcea9b968852b57c1 Oilg <50927525+Oilg@users.noreply.github.com> 1587149105 +0300	commit: Улучшено описание репозитория
+0f0cdc26c8ce4aeb017f35adcea9b968852b57c1 448f6511f05aeb1bc98cb882af6644cf4a6264f7 Oilg <50927525+Oilg@users.noreply.github.com> 1587403967 +0300	commit: записанный рекордером сценари
+448f6511f05aeb1bc98cb882af6644cf4a6264f7 96e572efc9998a93b1e803f352a03253a32c1adb Oilg <50927525+Oilg@users.noreply.github.com> 1587403987 +0300	commit: Создан проект PyCharm
+96e572efc9998a93b1e803f352a03253a32c1adb de32eec417bc343a787b200eaef103be9e25046f Oilg <50927525+Oilg@users.noreply.github.com> 1587635470 +0300	pull --progress origin: Fast-forward
+de32eec417bc343a787b200eaef103be9e25046f 79edfb5dcd80f3d79503ddb180bbbdd65d063bc1 Oilg <50927525+Oilg@users.noreply.github.com> 1587644818 +0300	commit: Методы и pytest
+79edfb5dcd80f3d79503ddb180bbbdd65d063bc1 dca295b1b106030b348172ff5580dc07a96a5c4a Oilg <50927525+Oilg@users.noreply.github.com> 1587649855 +0300	commit: Созданы пакеты для разных зон ответственности
+dca295b1b106030b348172ff5580dc07a96a5c4a 14be9cb884554bc6a5a6a27a5c69a73653436ce2 Oilg <50927525+Oilg@users.noreply.github.com> 1587650459 +0300	commit: Выделен класс для управления сессиями
+14be9cb884554bc6a5a6a27a5c69a73653436ce2 c9381becba902425a4bf41e2232b7ca4b47286a8 Oilg <50927525+Oilg@users.noreply.github.com> 1587650999 +0300	commit: Выделен класс для работы с группами
+c9381becba902425a4bf41e2232b7ca4b47286a8 d37d6be6bba387eec5603c0274822aa7ba2a666f Oilg <50927525+Oilg@users.noreply.github.com> 1587660575 +0300	commit: Добавлены контакты
+d37d6be6bba387eec5603c0274822aa7ba2a666f 937728e5f2944aa1dfcf70c1e615d505176b4db8 Oilg <50927525+Oilg@users.noreply.github.com> 1587661200 +0300	commit: Тесты для контактов разнесены в отдельные файлы
+937728e5f2944aa1dfcf70c1e615d505176b4db8 9dc0eac4e452e06ff14ecca9af53c6dbcbf8fd49 Oilg <50927525+Oilg@users.noreply.github.com> 1587666651 +0300	commit: conftest и удаление группы
+9dc0eac4e452e06ff14ecca9af53c6dbcbf8fd49 b7d1b367b87dddd55e1ae159669603dbfb734f90 Oilg <50927525+Oilg@users.noreply.github.com> 1587734491 +0300	commit: тест Изменение групп, исправление метода групп
+b7d1b367b87dddd55e1ae159669603dbfb734f90 a6bb59ff75f234364e3583ddaace420fb9e29c22 Oilg <50927525+Oilg@users.noreply.github.com> 1587808678 +0300	commit: Удаление контакта
+a6bb59ff75f234364e3583ddaace420fb9e29c22 7c6eadc4f6db1d8cc113462859919c1afccf069d Oilg <50927525+Oilg@users.noreply.github.com> 1587816853 +0300	commit: Изменение контактов
+7c6eadc4f6db1d8cc113462859919c1afccf069d 3340a33faa83175493c0fbf04222744f80f1e267 Oilg <50927525+Oilg@users.noreply.github.com> 1587986457 +0300	commit: Исправление ошибок
+3340a33faa83175493c0fbf04222744f80f1e267 905ebdab02eba6769e58d37ecf55805a9d5a5dba Oilg <50927525+Oilg@users.noreply.github.com> 1588150281 +0300	pull --progress origin: Fast-forward
+905ebdab02eba6769e58d37ecf55805a9d5a5dba ef506fb7bd4cd635a0fb991102b82a3866f10577 Oilg <50927525+Oilg@users.noreply.github.com> 1588155925 +0300	commit: Проверка выполненых действий (создание, редактировнаие, удаление)
+ef506fb7bd4cd635a0fb991102b82a3866f10577 5705972a538a999c22cfb98cbb02c04e00b39c20 Oilg <50927525+Oilg@users.noreply.github.com> 1588168946 +0300	commit: Изменено название локаторов
+5705972a538a999c22cfb98cbb02c04e00b39c20 83f705e4162a7df1271236349975f129a86b81be Oilg <50927525+Oilg@users.noreply.github.com> 1588169877 +0300	commit: Проверка соответсвия списка групп до и после удаления
+83f705e4162a7df1271236349975f129a86b81be 29090f01d8d62d70cba6baa72603e34d1488b0b2 Oilg <50927525+Oilg@users.noreply.github.com> 1588172150 +0300	commit: Проверка сортированных списков групп
+29090f01d8d62d70cba6baa72603e34d1488b0b2 8029a9cc1f6e616ed4ccf86c71a38d33af7390c0 Oilg <50927525+Oilg@users.noreply.github.com> 1588266578 +0300	pull --progress origin: Fast-forward
+8029a9cc1f6e616ed4ccf86c71a38d33af7390c0 a8125352968fbf3b27d81e922a73220e9853ede1 Oilg <50927525+Oilg@users.noreply.github.com> 1588275222 +0300	commit: Редактрование и удаление рандомного контакта
+a8125352968fbf3b27d81e922a73220e9853ede1 fbd89d072e46badb97db93264b347c8ff9738d92 Oilg <50927525+Oilg@users.noreply.github.com> 1588275832 +0300	commit: Исправление ошибки в методе выбора рандомного контакта
+fbd89d072e46badb97db93264b347c8ff9738d92 f4d6f03245d0eff9982601ef6af7192db77b5104 Oilg <50927525+Oilg@users.noreply.github.com> 1588604969 +0300	commit: Тест проверка наличия и соответствия номеров телефонов
+f4d6f03245d0eff9982601ef6af7192db77b5104 cf424146e1b1ab85d9746c16a8dfd938342e4109 Oilg <50927525+Oilg@users.noreply.github.com> 1588613203 +0300	commit: Метод merge_phones_like_on_home_page
+cf424146e1b1ab85d9746c16a8dfd938342e4109 5fabb225590e2fa94b88223fef407ef787502308 Oilg <50927525+Oilg@users.noreply.github.com> 1588615192 +0300	commit: Доработан test_phones_on_contact_view_page
+5fabb225590e2fa94b88223fef407ef787502308 7e4a3b125445b284e9a82213a4c7c38eb58038df Oilg <50927525+Oilg@users.noreply.github.com> 1588704344 +0300	commit: Параметризация test_add_group
+7e4a3b125445b284e9a82213a4c7c38eb58038df 296db35e75cc6ea8447b80df9250ae788b0486a5 Oilg <50927525+Oilg@users.noreply.github.com> 1588774430 +0300	commit: Параметризация test_add_contact
+296db35e75cc6ea8447b80df9250ae788b0486a5 c5254b0f84e94077e812800795efae8a2ed3959d Oilg <50927525+Oilg@users.noreply.github.com> 1588791878 +0300	commit: Параметризация браузера и урл
+c5254b0f84e94077e812800795efae8a2ed3959d 9bba8f9572e784cf2cd7aa4da8693584e9f142bb Oilg <50927525+Oilg@users.noreply.github.com> 1588844478 +0300	commit: загрузка параметров стенда и логина из файла
+9bba8f9572e784cf2cd7aa4da8693584e9f142bb 3fed2f5088571c710f88a1c27952c4b242ffe37c Oilg <50927525+Oilg@users.noreply.github.com> 1588846288 +0300	commit: Прописан путь файла с параметрами
+3fed2f5088571c710f88a1c27952c4b242ffe37c 17ddabb1574605adba36b2ee034ccefed28762e4 Oilg <50927525+Oilg@users.noreply.github.com> 1588847950 +0300	commit: Отдельный package для тестовых данных
+17ddabb1574605adba36b2ee034ccefed28762e4 c947ef849cc8c5e859587d5a34fa1b29d0dedb72 Oilg <50927525+Oilg@users.noreply.github.com> 1588850544 +0300	commit: Тестовые данные для test_add_contact
+c947ef849cc8c5e859587d5a34fa1b29d0dedb72 af484a0868a671d2c09918d9f4bdba22afeca43c Oilg <50927525+Oilg@users.noreply.github.com> 1588876463 +0300	commit: Создан пакет generator
+af484a0868a671d2c09918d9f4bdba22afeca43c 2193dcb73058ac491ea18bfe6d799e0ae9eb6e95 Oilg <50927525+Oilg@users.noreply.github.com> 1589018363 +0300	pull --progress origin: Fast-forward
+2193dcb73058ac491ea18bfe6d799e0ae9eb6e95 5d37cf2d7af391e190246002fd9d7a8878ec59c9 Oilg <50927525+Oilg@users.noreply.github.com> 1589027095 +0300	commit: Сравнение списков из БД
+5d37cf2d7af391e190246002fd9d7a8878ec59c9 4f5d38e8333c424d5a88a49268ef7f1962ac9165 Oilg <50927525+Oilg@users.noreply.github.com> 1589031463 +0300	commit: Удаление контактов (через выбор id + БД)
