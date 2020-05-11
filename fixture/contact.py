@@ -80,7 +80,7 @@ class ContactHelper:
         wd.find_element_by_xpath('//*[@id="content"]/form[2]/div[2]').click()
         wd.switch_to.alert.accept()
         self.contact_cache = None
-        self.waiting(0.05)
+        self.waiting(0.1)
 
     def select_contact_by_id(self, id):
         wd = self.app.wd
