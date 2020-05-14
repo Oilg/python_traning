@@ -59,6 +59,15 @@ class GroupHelper:
         wd = self.app.wd
         wd.find_element_by_css_selector('input[value="%s"]' % id).click()
 
+    def get_group_name_by_id(self, idgroup):
+        wd = self.app.wd
+        self.open_groups_page()
+        for element in wd.find_elements_by_class_name('group'):
+            id = element.find_element_by_name('selected[]').get_attribute('value')
+            if id == idgroup:
+                groupname = element.text
+                return groupname
+
     def select_first_group(self):
         wd = self.app.wd
         wd.find_element_by_name('selected[]').click()
